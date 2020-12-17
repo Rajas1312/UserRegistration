@@ -38,7 +38,17 @@ public class UserRegistration {
 		}
 		
 	}
-	
+	public void checkMobileNumber() {
+		System.out.println("Enter the Mobile number");
+		boolean mobile=Pattern.matches("^(\\+91)?[6-9]{1}[0-9]{9}$",scanner.next());
+		if(mobile==true) {
+			System.out.println("valid mobile number");
+		}
+		else {
+			System.out.println("invalid mobile number");
+		}
+		
+	}
 	
 	public static void main(String[] args) {
 		System.out.println("welcome to user registration");
@@ -47,6 +57,7 @@ public class UserRegistration {
 		userRegistration.checkFirstName();
 		userRegistration.checkLastName();
 		userRegistration.checkEmailId();
+		userRegistration.checkMobileNumber();
 
 
 	}
