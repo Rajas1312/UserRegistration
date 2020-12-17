@@ -51,7 +51,7 @@ public class UserRegistration {
 	}
 	public void checkPassword() {
 		System.out.println("Enter the Password");
-		boolean mobile=Pattern.matches("^[0-9a-zA-Z]{8,}$",scanner.next());
+		boolean mobile=Pattern.matches("^[A-Z]{1,}[0-9a-zA-Z]{8,}$",scanner.next());
 		if(mobile==true) {
 			System.out.println("valid password");
 		}
@@ -65,10 +65,10 @@ public class UserRegistration {
 		System.out.println("welcome to user registration");
 		
 		UserRegistration userRegistration=new UserRegistration();
-		userRegistration.checkFirstName();
-		userRegistration.checkLastName();
-		userRegistration.checkEmailId();
-		userRegistration.checkMobileNumber();
+//		userRegistration.checkFirstName();
+//		userRegistration.checkLastName();
+//		userRegistration.checkEmailId();
+//		userRegistration.checkMobileNumber();
 		userRegistration.checkPassword();
 
 
