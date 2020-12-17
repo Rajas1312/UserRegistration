@@ -51,7 +51,7 @@ public class UserRegistration {
 	}
 	public void checkPassword() {
 		System.out.println("Enter the Password");
-		boolean mobile=Pattern.matches("^(?=.*[A-Z])(?=.*[0-9])[A-Za-z0-9]{8,}$",scanner.next());
+		boolean mobile=Pattern.matches("^(?=.*[A-Z])(?=.*[0-9])[A-Za-z0-9\\W]{8,}$",scanner.next());
 		if(mobile==true) {
 			System.out.println("valid password");
 		}
