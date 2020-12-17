@@ -27,6 +27,17 @@ public class UserRegistration {
 			System.out.println("invalid lastname");
 		}
 	}
+	public void checkEmailId() {
+		System.out.println("Enter the Email ID");
+		boolean email=Pattern.matches("^[a-zA-Z]{3}[0-9a-zA-Z\\.\\_\\-]*\\@[a-z]*\\.(com|co|in|co.in|com.au|net)$",scanner.next());
+		if(email==true) {
+			System.out.println("valid Email ID");
+		}
+		else {
+			System.out.println("invalid Email ID");
+		}
+		
+	}
 	
 	
 	public static void main(String[] args) {
@@ -35,6 +46,8 @@ public class UserRegistration {
 		UserRegistration userRegistration=new UserRegistration();
 		userRegistration.checkFirstName();
 		userRegistration.checkLastName();
+		userRegistration.checkEmailId();
+
 
 	}
 
